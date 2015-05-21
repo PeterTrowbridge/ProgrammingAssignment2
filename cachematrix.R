@@ -7,12 +7,14 @@
 ## accessed instead of recalculating. This is done 
 ## to reduce load times.
 
+## These functions are heavily based on the example 
+## code for this assignment.
 
-## This function, makeCacheMatrix, takes a matrix, x, and returns a
-## vector of functions that are used to return x,
-## return its inverse, set x, and set the inverse.
-## Before cacheSolve is used, the get inverse function
-## returns a NULL value.
+## This function, makeCacheMatrix, takes a matrix, x, 
+## and returns a vector of functions that are used to 
+## return x, return its inverse, set x, and set the 
+## inverse. Before cacheSolve is used, the get inverse 
+## function returns a NULL value.
 
 ## argument x is a matrix
 makeCacheMatrix <- function(x = matrix()) {
