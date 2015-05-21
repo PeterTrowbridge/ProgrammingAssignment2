@@ -8,7 +8,7 @@
 ## to reduce load times.
 
 
-## This function takes a matrix, x, and returns a
+## This function, makeCacheMatrix, takes a matrix, x, and returns a
 ## vector of functions that are used to return x,
 ## return its inverse, set x, and set the inverse.
 ## Before cacheSolve is used, the get inverse function
@@ -45,7 +45,13 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## This function, cacheSolve, takes the results of
+## makeCacheMatrix and tries return the inverse of
+## the containing matrix. If the inverse already
+## exists in the list, then it is returned. Otherwise
+## the inverse is calcuated, returned, and cached into
+## the list.
+
 ## '...' arguments to be passed to solve() function
 cacheSolve <- function(x, ...) {
 
